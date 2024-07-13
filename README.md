@@ -37,7 +37,7 @@ This command will start the development server. Open your browser and navigate t
 
 ## Backend Setup (Node.js, Express.js, MongoDB)
 
-The Backend is built using Node.js, Express.js, and MongoDB. 
+The Backend is built using Node.js, Express.js, and MongoDB. There are 5 routes made to get all users, get a user, create a user, update a user, and delete a user.
 
 ### Prerequisites
 
