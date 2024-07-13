@@ -1,0 +1,58 @@
+* {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.containerList {
+    display: flex;
+    justify-content: center;
+}
+
+.userList {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.userItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.userItem span {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.editButton,
+.deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    color: #000000;
+}
+
+.editButton:hover {
+    color: #2CB67D;
+    transform: scale(1.1);
+}
+
+.deleteButton:hover {
+    color: #CE0E2D;
+    transform: scale(1.1);
+}

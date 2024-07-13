@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.flexHeader {
+  display: flex;
+  height: 150px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+    text-align: center;
+}
+
+.wordhead {
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+width: 90%;
+}
+
+.headItem-1 {
+font-family: "League Spartan", sans-serif;
+font-weight: 800;
+font-size: 60px;
+color: #000000;
+display: flex;
+justify-content: flex-start;
+}
+
+.headItem-2 {
+color: #CE0E2D;
+font-weight: 500;
+}
+
+.flexBody {
+    display: flex;
+    justify-content: space-evenly;
+    color: #000000;
+}
+
+.navButton {
+    font-weight: 600;
+    color: #CE0E2D;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    transition: background-color 0.6s ease, transform 0.6s;
+  }
+
+@media only screen and (max-width: 768px) {
+
+    .flexHeader {
+      padding: 20px 15px 0px 0px;
+    }
+  
+    .headItem-1 {
+      font-size: 40px;
+    }
+  
+    .headItem-2 {
+      font-size: 20px;
+      text-align: left;
+    }
+  
+    h2 {
+      font-size: 25px;
+    }
+
+    .flexBody {
+        padding: 0px 50px 0px 20px;
+        flex-direction: row;
+    }
+
+    .navButton {
+        font-size: 20px;
+        width: 45%;
+        height: 40%;
+        border: 5px solid #CE0E2D;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .flexHeader {
+      padding: 20px 15px 0px 0px;
+    }
+  
+    .headItem-1 {
+      font-size: 40px;
+    }
+  
+    .headItem-2 {
+      font-size: 20px;
+      text-align: left;
+    }
+  
+    h2 {
+      font-size: 25px;
+    }
+  
+    .flexBody {
+      padding: 0px 50px 0px 20px;
+      flex-direction: row;
+    }
+
+    .navButton {
+        font-size: 20px;
+        width: 45%;
+        height: 40%;
+        border: 5px solid #CE0E2D;
+      }
+}
+
+@media only screen and (min-width: 1290px) {
+
+    .flexHeader {
+      padding: 25px;
+    }
+  
+    .headItem-1 {
+      font-size: 60px;
+    }
+  
+    .headItem-2 {
+      font-size: 30px;
+    }
+  
+    h2 {
+      font-size: 35px;
+    }
+
+    .flexBody {
+        padding: 0px 50px 0px 50px;
+        flex-direction: row;
+      }
+
+      .navButton {
+        font-size: 30px;
+        width: 40%;
+        height: 75px;
+        border: 7px solid #CE0E2D;
+      }
+    
+      .navButton:hover {
+        color: white;
+        transform: scale(1.1);
+        background: #CE0E2D;
+      }
+}
