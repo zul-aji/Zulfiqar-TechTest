@@ -13,10 +13,12 @@ const List = () => {
     const [errResponse, setErrResponse] = useState();
     const navigate = useNavigate();
 
+    // Fetch users on component mount
     useEffect(() => {
         fetchUsers();
     }, []);
 
+    // Fetch users from API
     const fetchUsers = () => {
         fetch('http://localhost:3000/user')
             .then(response => response.json())
@@ -24,16 +26,18 @@ const List = () => {
             .catch(error => console.error('Error fetching users:', error));
     };
 
+    // Navigate to previous page
     const goBack = () => {
         navigate(-1);
     };
 
+    // Delete user
     const handleDelete = async (id) => {
         try {
             const getResponse = await fetch(`http://localhost:3000/user/${id}`, { method: 'DELETE' });
             const dataResponse = await getResponse.json();
             if (getResponse.ok) {
-                fetchUsers();
+                fetchUsers(); // Re-fetch users after deleting user
             } else {
                 setAlertMessage(dataResponse.message);
             }
@@ -43,14 +47,17 @@ const List = () => {
         }
     };
 
+    // Update user
     const handleUpdate = (id) => {
         navigate(`/form/${id}`);
     };
 
+    // Alert modal
     const handleAlertClose = () => {
         setShowAlert(false);
     };
 
+    // Exit modal
     const handleAlertExit = () => {
         fetchUsers();  // Re-fetch users after closing the alert
     };

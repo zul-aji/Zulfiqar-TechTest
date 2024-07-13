@@ -23,6 +23,7 @@ const Form = () => {
   const navigate = useNavigate();
   const { id } = useParams(); // This gets the id parameter from the URL
 
+  // Fetch user data for update
   useEffect(() => {
     if (id) {
       // If id is present in URL params, fetch user data for update
@@ -43,6 +44,7 @@ const Form = () => {
     }
   };
 
+  // Handle form changes
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
@@ -52,6 +54,7 @@ const Form = () => {
     navigate(-1);
   };
 
+  // Validate form from any wrong input
   const validateForm = () => {
     const phonePattern = /^(\+62|62|0)8\d{8,11}$/;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -71,6 +74,7 @@ const Form = () => {
     return true;
   };
 
+  // Handle form submission
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (!validateForm()) {
