@@ -4,7 +4,7 @@ Welcome to the project repository! This repository contains three main folders: 
 
 ## Frontend Setup (Vite and React.js)
 
-The Frontend is built using Vite and React.js.
+The Frontend is built using Vite and React.js. There are 3 pages made where one will act as a homepage, one as the form to register user and one for viewing the list of registered users.
 
 ### Prerequisites
 
@@ -37,7 +37,7 @@ This command will start the development server. Open your browser and navigate t
 
 ## Backend Setup (Node.js, Express.js, MongoDB)
 
-The Backend is built using Node.js, Express.js, and MongoDB.
+The Backend is built using Node.js, Express.js, and MongoDB. 
 
 ### Prerequisites
 
@@ -83,7 +83,7 @@ This command will start the backend server. Ensure MongoDB is running and access
 
 ## Autotesting Setup (Python and Selenium)
 
-The Autotesting folder contains scripts for automated testing using Python and Selenium
+The Autotesting folder contains scripts for automated testing using Python and Selenium. There are 3 numbered python scripts in the folder and running the scripts chronologically are recommended. 
 
 ### Prerequisites
 
